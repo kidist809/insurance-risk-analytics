@@ -1,1 +1,20 @@
- 
+# Python
+__pycache__/
+*.pyc
+
+# virtual env
+venv/
+.venv/
+env/
+
+# notebook checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# DVC cache
+.dvc/cache/
+
+# data files
+data/*.csv 
