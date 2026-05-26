@@ -1,4 +1,5 @@
 [core]
     remote = localstorage
+    site_cache_dir = .dvc/site_cache
 [remote "localstorage"]
     url = ../../dvc-storage

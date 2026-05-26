@@ -1,0 +1,20 @@
+schema: '2.0'
+stages:
+  clean_data:
+    cmd: python -c "from src.data_loader import load_data; df = 
+      load_data('data/insurance_data.csv'); 
+      df.drop_duplicates().to_csv('data/insurance_data_clean.csv', index=False)"
+    deps:
+    - path: data/insurance_data.csv
+      hash: md5
+      md5: 1846c9c80019e93300c46191738efbe9
+      size: 1342065
+    - path: src/data_loader.py
+      hash: md5
+      md5: 2722d00af076df449ef336ec64b24940
+      size: 450
+    outs:
+    - path: data/insurance_data_clean.csv
+      hash: md5
+      md5: 1846c9c80019e93300c46191738efbe9
+      size: 1342065
